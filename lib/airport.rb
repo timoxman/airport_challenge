@@ -1,8 +1,10 @@
 class Airport
 
+$max_capacity = 6
+
   def initialize
     @planes_at_airport =[]
-    @capacity = 6
+    @capacity = $max_capacity
   end
 
   def land_plane(plane)
@@ -14,4 +16,5 @@ class Airport
   def planes_at_airport
     return 1
   end
+
 end

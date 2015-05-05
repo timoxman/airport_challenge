@@ -7,4 +7,5 @@ class Plane
   def status
     @status
   end
+
 end

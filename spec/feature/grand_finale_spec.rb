@@ -78,6 +78,3 @@ end
       expect (ap.planes_at_airport).to eq = 0 and (boeing.location).to eq"landed"
     end
   end
-
-
-

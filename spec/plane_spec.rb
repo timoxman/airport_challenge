@@ -14,12 +14,25 @@ require 'plane'
 
 describe Plane do
 
-  xit 'has a flying status when created'
+  #unit tests, have one expect statement
+  #only test plane, if you need anything else stub it out
 
-  xit 'has a flying status when in the air'
+  it 'has a flying status when created' do
+    plane = Plane.new
+    expect(plane.status).to eq(:flying)
+  end
 
-  xit 'can take off'
+  it 'can land' do
+    plane = Plane.new
+    plane.land_plane
+    expect(plane.status).to eq(:landed)
+  end
 
-  xit 'changes its status to flying after taking off'
+  it 'can take off' do
+    plane = Plane.new
+    plane.land_plane
+    plane.take_off_plane
+    expect(plane.status).to eq(:flying)
+  end
 
 end
